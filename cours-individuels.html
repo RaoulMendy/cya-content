@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cours individuels Primaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: system-ui, Arial, sans-serif;
+        color: #222;
+        background: #fff;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 16px;
+      }
+      h1,
+      h2 {
+        font-weight: 600;
+        color: #1a4a8a;
+        margin-bottom: 8px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+        margin-top: 28px;
+      }
+      ul {
+        margin: 0 0 12px 18px;
+        padding: 0;
+      }
+      .btn {
+        display: inline-block;
+        background: #1a4a8a;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 7px 14px;
+        margin-top: 8px;
+        font-size: 1rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background 0.2s;
+        margin-right: 8px;
+      }
+      .link {
+        color: #1a4a8a;
+        text-decoration: underline;
+        background: none;
+        border: none;
+        padding: 0;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-right: 12px;
+      }
+      .quick-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        list-style: none;
+        margin: 18px 0 0 0;
+        padding: 0;
+      }
+      @media (max-width: 600px) {
+        .container {
+          padding: 8px;
+        }
+        .quick-nav {
+          flex-direction: column;
+          gap: 4px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      id="main-content"
+      tabindex="-1"
+      aria-label="Présentation des cours individuels Primaire"
+      class="container"
+    >
+      <h1>Cours individuels Primaire</h1>
+      <p>
+        Nos cours individuels offrent un accompagnement personnalisé pour les
+        élèves du primaire. Chaque élève bénéficie d’un suivi adapté à son
+        rythme et à ses besoins, avec un tuteur dédié.
+      </p>
+
+      <section aria-labelledby="avantages-heading">
+        <h2 id="avantages-heading">Avantages du format individuel</h2>
+        <ul>
+          <li>Programme sur-mesure</li>
+          <li>Suivi personnalisé avec un tuteur dédié</li>
+          <li>Flexibilité des horaires</li>
+          <li>Tuteurs expérimentés et bienveillants</li>
+          <li>Adaptation continue aux besoins de l’élève</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="pour-qui-heading">
+        <h2 id="pour-qui-heading">Pour qui&nbsp;?</h2>
+        <p>
+          Pour tous les élèves du CP au CM2 qui souhaitent un accompagnement
+          individualisé pour progresser efficacement.
+        </p>
+      </section>
+
+      <section aria-labelledby="deroulement-heading">
+        <h2 id="deroulement-heading">Déroulement d’une séance</h2>
+        <ul>
+          <li>Sessions personnalisées selon les besoins de l’élève</li>
+          <li>Durée flexible, généralement entre 45 minutes et 1h30</li>
+          <li>Travail sur les points faibles et renforcement des acquis</li>
+          <li>Utilisation d’outils pédagogiques adaptés</li>
+        </ul>
+        <a href="matieres.html" class="link">Voir les matières proposées</a>
+        <a href="planning.html" class="link">Voir le planning</a>
+      </section>
+
+      <section aria-labelledby="cta-heading">
+        <h2
+          id="cta-heading"
+          style="
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+          "
+        >
+          Actions principales
+        </h2>
+        <a href="tarifs.html" class="btn">Voir les tarifs</a>
+        <a href="inscription.html" class="btn">Inscription / Réservation</a>
+        <a href="faq.html" class="link">FAQ</a>
+      </section>
+
+      <nav aria-label="Navigation rapide">
+        <ul class="quick-nav">
+          <li><a href="index.html" class="link">Accueil Primaire</a></li>
+          <li>
+            <a href="cours-collectifs.html" class="link"
+              >Cours collectifs Primaire</a
+            >
+          </li>
+          <li><a href="matieres.html" class="link">Matières</a></li>
+          <li><a href="ressources.html" class="link">Ressources</a></li>
+          <li><a href="faq.html" class="link">FAQ</a></li>
+          <li><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+      </nav>
+    </main>
+  </body>
+</html>

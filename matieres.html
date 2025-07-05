@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Matières proposées – Primaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: system-ui, Arial, sans-serif;
+        color: #222;
+        background: #fff;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 16px;
+      }
+      h1,
+      h2 {
+        font-weight: 600;
+        color: #1a4a8a;
+        margin-bottom: 8px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+        margin-top: 28px;
+      }
+      ul {
+        margin: 0 0 12px 18px;
+        padding: 0;
+      }
+      .link {
+        color: #1a4a8a;
+        text-decoration: underline;
+        background: none;
+        border: none;
+        padding: 0;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-right: 12px;
+      }
+      .quick-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        list-style: none;
+        margin: 18px 0 0 0;
+        padding: 0;
+      }
+      @media (max-width: 600px) {
+        .container {
+          padding: 8px;
+        }
+        .quick-nav {
+          flex-direction: column;
+          gap: 4px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      id="main-content"
+      tabindex="-1"
+      aria-label="Matières proposées au Primaire"
+      class="container"
+    >
+      <h1>Matières proposées – Primaire</h1>
+      <p>
+        Nos cours de soutien scolaire primaire couvrent les matières
+        fondamentales pour accompagner chaque élève dans sa progression.
+      </p>
+
+      <section aria-labelledby="francais-heading">
+        <h2 id="francais-heading">Français</h2>
+        <ul>
+          <li>Lecture et compréhension de textes</li>
+          <li>Expression écrite et orale</li>
+          <li>Grammaire, orthographe, vocabulaire</li>
+          <li>Jeux et ateliers pour développer le goût de lire</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="maths-heading">
+        <h2 id="maths-heading">Maths</h2>
+        <ul>
+          <li>Calcul et numération</li>
+          <li>Résolution de problèmes</li>
+          <li>Logique et raisonnement</li>
+          <li>Jeux mathématiques pour apprendre en s’amusant</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="anglais-heading">
+        <h2 id="anglais-heading">Anglais</h2>
+        <ul>
+          <li>Initiation à l’anglais oral et écrit</li>
+          <li>Vocabulaire de base</li>
+          <li>Chansons, jeux et activités ludiques</li>
+          <li>Développement de la compréhension et de l’expression</li>
+        </ul>
+      </section>
+
+      <nav aria-label="Navigation matières" class="quick-nav">
+        <ul>
+          <li>
+            <a href="cours-collectifs.html" class="link"
+              >Cours collectifs Primaire</a
+            >
+          </li>
+          <li>
+            <a href="cours-individuels.html" class="link"
+              >Cours individuels Primaire</a
+            >
+          </li>
+          <li>
+            <a href="ressources.html" class="link">Ressources Primaire</a>
+          </li>
+          <li><a href="index.html" class="link">Accueil Primaire</a></li>
+          <li><a href="faq.html" class="link">FAQ</a></li>
+          <li><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+      </nav>
+    </main>
+  </body>
+</html>

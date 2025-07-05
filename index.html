@@ -1,11 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document à jour</title>
+  <meta charset="UTF-8">
+  <title>Soutien scolaire Primaire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      color: #222;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-barre-niveaux {
+      background: #f6f8fa;
+      padding: 8px 0;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 18px;
+    }
+    .nav-barre-niveaux ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-niveau {
+      color: #1a4a8a;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 4px 10px;
+      border-radius: 3px;
+      transition: background 0.2s;
+    }
+    .nav-niveau:hover, .nav-niveau.active {
+      background: #e3eaf7;
+      color: #1a4a8a;
+      font-weight: 700;
+    }
+    @media (max-width: 600px) {
+      .nav-barre-niveaux ul {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+      }
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    h1, h2, h3 {
+      font-weight: 600;
+      color: #1a4a8a;
+      margin-bottom: 8px;
+    }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.3rem; margin-top: 28px; }
+    h3 { font-size: 1.1rem; }
+    ul { margin: 0 0 12px 18px; padding: 0; }
+    .horizontal-list {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 12px 0;
+    }
+    .horizontal-list > li {
+      flex: 1;
+      min-width: 180px;
+    }
+    blockquote {
+      border-left: 3px solid #1a4a8a;
+      margin: 12px 0;
+      padding: 8px 16px;
+      font-style: italic;
+      background: #f6f8fa;
+    }
+    blockquote footer {
+      font-size: 0.95em;
+      color: #555;
+      margin-top: 4px;
+    }
+    .btn {
+      display: inline-block;
+      background: #1a4a8a;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 7px 14px;
+      margin-top: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-right: 8px;
+    }
+    .link {
+      color: #1a4a8a;
+      text-decoration: underline;
+      background: none;
+      border: none;
+      padding: 0;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-right: 12px;
+    }
+    .quick-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      list-style: none;
+      margin: 18px 0 0 0;
+      padding: 0;
+    }
+    @media (max-width: 600px) {
+      .horizontal-list { flex-direction: column; gap: 8px; }
+      .container { padding: 8px; }
+      .quick-nav { flex-direction: column; gap: 4px; }
+    }
+  </style>
 </head>
 <body>
-    
+  <!-- Barre de navigation secondaire pour accéder aux sommaires des niveaux -->
+  <nav aria-label="Navigation secondaire : niveaux scolaires" class="nav-barre-niveaux">
+    <ul>
+      <li><a href="index.html" class="nav-niveau active">Primaire</a></li>
+      <li><a href="college/index.html" class="nav-niveau">Collège</a></li>
+      <li><a href="superieur/index.html" class="nav-niveau">Supérieur</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content" tabindex="-1" aria-label="Contenu principal" class="container">
+    <h1>Soutien scolaire Primaire</h1>
+    <p>
+      Offrez à votre enfant les meilleures bases pour réussir son parcours scolaire dès le primaire.
+      Nos cours collectifs et individuels sont conçus pour renforcer la confiance, l’autonomie et le plaisir d’apprendre.
+    </p>
+
+    <section aria-labelledby="formats-heading">
+      <h2 id="formats-heading">Formats de cours</h2>
+      <ul class="horizontal-list">
+        <li>
+          <h3>Cours collectifs</h3>
+          <ul>
+            <li>Groupes dynamiques</li>
+            <li>Tuteurs testés</li>
+            <li>Entraide entre élèves</li>
+          </ul>
+          <a href="cours-collectifs.html" class="btn">Cours collectifs</a>
+        </li>
+        <li>
+          <h3>Cours individuels</h3>
+          <ul>
+            <li>Accompagnement personnalisé</li>
+            <li>Programme sur-mesure</li>
+            <li>Suivi régulier</li>
+          </ul>
+          <a href="cours-individuels.html" class="btn">Cours individuels</a>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="subjects-heading">
+      <h2 id="subjects-heading">Matières</h2>
+      <ul>
+        <li>Français : lecture, écriture, compréhension</li>
+        <li>Maths : calcul, logique, problèmes</li>
+        <li>Anglais : initiation, vocabulaire</li>
+      </ul>
+      <a href="matieres.html" class="link">Voir les matières</a>
+    </section>
+
+    <section aria-labelledby="why-choose-heading">
+      <h2 id="why-choose-heading">Nos atouts</h2>
+      <ul>
+        <li>Tuteurs expérimentés</li>
+        <li>Méthodes adaptées à l’âge</li>
+        <li>Suivi régulier</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="testimonials-heading">
+      <h2 id="testimonials-heading">Témoignages</h2>
+      <blockquote>
+        “Ma fille a repris confiance en elle grâce aux cours collectifs.”
+        <footer>— Sophie, CE2</footer>
+      </blockquote>
+      <blockquote>
+        “Le suivi personnalisé est un vrai plus !”
+        <footer>— Karim, CM1</footer>
+      </blockquote>
+    </section>
+
+    <section aria-labelledby="faq-heading">
+      <h2 id="faq-heading">FAQ</h2>
+      <ul>
+        <li><strong>À qui s’adressent vos cours ?</strong> CP à CM2.</li>
+        <li><strong>Collectif ou individuel ?</strong> Conseils personnalisés.</li>
+        <li><strong>Changement de formule ?</strong> Possible à tout moment.</li>
+      </ul>
+      <a href="faq.html" class="link">Voir la FAQ</a>
+    </section>
+
+    <section aria-labelledby="resources-heading">
+      <h2 id="resources-heading">Ressources</h2>
+      <ul>
+        <li>Fiches à télécharger</li>
+        <li>Exercices interactifs</li>
+        <li>Conseils pour les parents</li>
+      </ul>
+      <a href="ressources.html" class="link">Voir les ressources</a>
+    </section>
+
+    <nav aria-label="Navigation rapide">
+      <ul class="quick-nav">
+        <li><a href="cours-collectifs.html" class="link">Cours collectifs</a></li>
+        <li><a href="cours-individuels.html" class="link">Cours individuels</a></li>
+        <li><a href="matieres.html" class="link">Matières</a></li>
+        <li><a href="ressources.html" class="link">Ressources</a></li>
+        <li><a href="faq.html" class="link">FAQ</a></li>
+        <li><a href="contact.html" class="link">Contact</a></li>
+      </ul>
+    </nav>
+  </main>
 </body>
 </html>

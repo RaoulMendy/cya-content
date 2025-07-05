@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarifs – Primaire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      color: #222;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    h1, h2 {
+      font-weight: 600;
+      color: #1a4a8a;
+      margin-bottom: 8px;
+    }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.1rem; margin-top: 28px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 18px;
+    }
+    th, td {
+      border: 1px solid #e0e0e0;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background: #e3eaf7;
+      color: #1a4a8a;
+      font-weight: 600;
+    }
+    .info {
+      margin-bottom: 18px;
+      color: #555;
+      font-size: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #1a4a8a;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 7px 14px;
+      margin-top: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-right: 8px;
+    }
+    .link {
+      color: #1a4a8a;
+      text-decoration: underline;
+      background: none;
+      border: none;
+      padding: 0;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-right: 12px;
+    }
+    .quick-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      list-style: none;
+      margin: 18px 0 0 0;
+      padding: 0;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 8px; }
+      .quick-nav { flex-direction: column; gap: 4px; }
+      table, th, td { font-size: 0.98rem; }
+    }
+  </style>
+</head>
+<body>
+  <main id="main-content" tabindex="-1" aria-label="Tarifs Primaire" class="container">
+    <h1>Tarifs – Primaire</h1>
+    <p class="info">
+      Découvrez nos formules de soutien scolaire pour le primaire. Tous nos tarifs sont sans frais d’inscription et incluent l’accès aux ressources en ligne.
+    </p>
+
+    <section aria-labelledby="collectifs-heading">
+      <h2 id="collectifs-heading">Cours collectifs</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Formule</th>
+            <th>Tarif</th>
+            <th>Détail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Séance à l’unité</td>
+            <td>18&nbsp;€</td>
+            <td>1h30 en groupe de 4 à 8 élèves</td>
+          </tr>
+          <tr>
+            <td>Forfait mensuel</td>
+            <td>65&nbsp;€/mois</td>
+            <td>1 séance par semaine</td>
+          </tr>
+          <tr>
+            <td>Forfait trimestre</td>
+            <td>180&nbsp;€/trimestre</td>
+            <td>1 séance par semaine, engagement 3 mois</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="individuels-heading">
+      <h2 id="individuels-heading">Cours individuels</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Formule</th>
+            <th>Tarif</th>
+            <th>Détail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Séance à l’unité</td>
+            <td>32&nbsp;€</td>
+            <td>1h avec un tuteur dédié</td>
+          </tr>
+          <tr>
+            <td>Forfait 5 séances</td>
+            <td>150&nbsp;€</td>
+            <td>5 séances de 1h</td>
+          </tr>
+          <tr>
+            <td>Forfait 10 séances</td>
+            <td>280&nbsp;€</td>
+            <td>10 séances de 1h</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <p class="info">
+      <strong>Réduction famille</strong> : -10% à partir du 2<sup>e</sup> enfant inscrit.<br>
+      <strong>Modalités de paiement</strong> : carte bancaire, virement, paiement mensuel ou en une fois.
+    </p>
+
+    <a href="inscription.html" class="btn">Inscription / Réservation</a>
+    <a href="faq.html" class="link">FAQ</a>
+
+    <nav aria-label="Navigation tarifs" class="quick-nav">
+      <ul>
+        <li><a href="index.html" class="link">Accueil Primaire</a></li>
+        <li><a href="cours-collectifs.html" class="link">Cours collectifs Primaire</a></li>
+        <li><a href="cours-individuels.html" class="link">Cours individuels Primaire</a></li>
+        <li><a href="matieres.html" class="link">Matières Primaire</a></li>
+        <li><a href="ressources.html" class="link">Ressources Primaire</a></li>
+        <li><a href="faq.html" class="link">FAQ</a></li>
+        <li><a href="contact.html" class="link">Contact</a></li>
+      </ul>
+    </nav>
+  </main>
+</body>
+</html>
